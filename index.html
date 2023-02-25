@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- CREATE MODAL TO USE CALCULATOR -->
-    <div class="modal">
-        <p>Welcome to the Timer App!</p>
-        <div class="modalBtn">
-            <button>Enter</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <p>Welcome to the Timer App!</p>
+            <div class="modalBtn">
+                <button class="enterBtn">Enter</button>
+            </div>
         </div>
     </div>
     
     <header>
-        <h1>Clock Timer</h1>    
-        <button>Set Time</button>
+        <h1>Clock Timer</h1> 
+        <input type="text" placeholder="Set Time">   
+        <button class="set-time-btn">Submit</button>
     </header>
     
     <!-- display the time value and buttons to add time if desired -->
     <main>
         
-        <div class="timer"></div>
+        <div class="timer">10:00</div>
         <div class="time-options">
             <button>30 Seconds</button>
             <button>1 Minute</button>
@@ -32,6 +36,7 @@
         </div>
     </main>
 
-    <footer>&copy; De'Jour Ford 2023</footer>
+    
 </body>
+<script src="main.js"></script>
 </html>
