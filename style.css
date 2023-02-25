@@ -5,6 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+button:hover {
+    cursor: pointer;
+    background: crimson;
+}
+
 header {
     text-align: center;
     padding: 20px;
@@ -31,6 +36,11 @@ input {
     border: 3px solid black;
     font-weight: 800;
     letter-spacing: 0.3rem;
+    outline: none;
+}
+
+.time-input:focus {
+    border: 3px solid crimson;
 }
 
 .timer {
@@ -88,7 +98,7 @@ main button {
 }
 
 .modalBtn button {
-    padding: 5px;
+    padding: 10px;
     margin-top: 50px;
     font-weight: 800;
     text-transform: uppercase;
@@ -100,7 +110,9 @@ main button {
     cursor: pointer;
 }
 
-
+.modal-text {
+    font-size: 1.8rem;
+}
 
 
 
