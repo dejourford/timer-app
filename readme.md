@@ -15,3 +15,6 @@ The purpose of this app is to create a timer that my son can use for his book re
 --have a modal that grants access to timer???
 
 <h1>LESSONS LEARNED</h1>
+--had to ask chatGPT about making modals
+<br>
+--learned that modals are actually its own element that is the height of the page
