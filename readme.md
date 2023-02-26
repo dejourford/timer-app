@@ -18,3 +18,5 @@ The purpose of this app is to create a timer that my son can use for his book re
 --had to ask chatGPT about making modals
 <br>
 --learned that modals are actually its own element that is the height of the page
+<br>
+--learned how to use date() and seen how useful it could be
