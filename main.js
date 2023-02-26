@@ -7,10 +7,7 @@ enterBtn.onclick = function() {
   modal.style.display = "none";
 }
 
-// DEFINE USER TIME IN SECONDS
-const userTimeInSeconds = (userTimeToNumber) => {
-    return userTimeToNumber * 60
-}
+
 
 
 // LISTEN FOR SUBMIT BUTTON CLICK
@@ -38,10 +35,7 @@ getTime = () => {
  let minutesTime = document.querySelector('#minutesTime')
  minutesTime.textContent = userTime + ":" + "0" + "0"
  userTimeToNumber = parseInt(minutesTime.textContent)
-//  CONVERT USER TIME IN MINUTES TO SECONDS
- userTimeInSeconds(userTimeToNumber)
- let numUserTimeInSeconds = Number(userTimeInSeconds);
- 
+
 
 
 
