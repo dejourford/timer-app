@@ -16,10 +16,11 @@ const second = now.getSeconds();
 // CREATE FUNCTION TO GET USER TIME
 getTime = () => {
     const userTime = document.querySelector('.time-input').value
-    console.log(userTime)
  // INSERT TIME IN DOM
  const minutesTime = document.querySelector('#minutesTime')
- minutesTime.textContent = userTime
+ minutesTime.textContent = userTime + ":" + "0" + "0"
+ userTimeToNumber = parseInt(minutesTime.textContent)
+
 }
 
 // LISTEN FOR SUBMIT BUTTON CLICK
