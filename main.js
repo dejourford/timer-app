@@ -13,13 +13,18 @@ const second = now.getSeconds();
 
 
 
-
-
-
 // CREATE FUNCTION TO GET USER TIME
 getTime = () => {
     const userTime = document.querySelector('.time-input').value
     console.log(userTime)
+ // INSERT TIME IN DOM
+ const minutesTime = document.querySelector('#minutesTime')
+ minutesTime.textContent = userTime
 }
 
-const submitBtn = document.querySelector('.set-time-btn').addEventListener('click', getTime)
+// LISTEN FOR SUBMIT BUTTON CLICK
+const submitBtn = document.querySelector('.set-time-btn')
+submitBtn.addEventListener('click', () => {
+    getTime()
+   
+})
