@@ -7,8 +7,11 @@ enterBtn.onclick = function() {
   modal.style.display = "none";
 }
 
-
-
+// DEFINE BUTTONS
+const thirtyBtn = document.querySelector('#thirtyBtn')
+const oneBtn = document.querySelector('#oneBtn')
+const fiveBtn = document.querySelector('#fiveBtn')
+const tenBtn = document.querySelector('#tenBtn')
 
 // LISTEN FOR SUBMIT BUTTON CLICK
 const submitBtn = document.querySelector('.set-time-btn')
@@ -33,8 +36,6 @@ getTime = () => {
     const userTime = document.querySelector('.time-input').value
  // INSERT TIME IN DOM
  let minutesTime = document.querySelector('#minutesTime')
- minutesTime.textContent = userTime + ":" + "0" + "0"
- userTimeToNumber = parseInt(minutesTime.textContent)
 
 
 
@@ -45,7 +46,8 @@ getTime = () => {
  let intervalId = setInterval(function() {
    num--;
    console.log(num); // Output: the current value of `num` after decrementing
-    minutesTime.textContent = formatTime(num)
+   minutesTime.textContent = formatTime(num)
+addTime()
 
    if (num <= 0) {
      clearInterval(intervalId); // Stop the loop when `num` reaches 0
@@ -54,6 +56,15 @@ getTime = () => {
 
 }
 
+addTime = () => {
+    thirtyBtn.addEventListener('click', () => {
+        newTime = num + 30
+        minutesTime.textContent += newTime
+        console.log('thirty')
+    })  
+}
 
 
 
+// need to figure out how 
+// to increase time when buttons are clicked
