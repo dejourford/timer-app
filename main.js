@@ -12,3 +12,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// DEFINE A SECOND
+const now = new Date()
+const second = now.getSeconds();
+
