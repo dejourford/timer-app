@@ -22,3 +22,8 @@ The purpose of this app is to create a timer that my son can use for his book re
 --learned how to use date() and seen how useful it could be
 <br>
 --using arrow functions require a function to literally be called inside of it
+
+<h1>IN PROGRESS</h1>
+--need to address button presses for extra time
+<br>
+--need to create logic for countdown
